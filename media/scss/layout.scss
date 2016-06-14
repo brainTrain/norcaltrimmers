@@ -1,0 +1,43 @@
+// color vars
+$header-logo-color: #B4D455;
+$header-background-color: #1D1917;
+$header-nav-color: #7C7372;
+$header-nav-color-active: #FFF;
+
+// dimension vars
+$header-height: 50px;
+
+.content {
+    padding-top: $header-height;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: $header-height;
+    background-color: $header-background-color;
+
+    nav {
+        float: left;
+    }
+}
+
+.header-logo {
+    cursor: pointer;
+    color: $header-logo-color;
+    float: left;
+    line-height: $header-height;
+    padding: 0 15px;
+}
+
+.header-nav-item {
+    cursor: pointer;
+    color: $header-nav-color;
+    line-height: $header-height;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+    &:hover {
+        color: $header-nav-color-active;
+    }
+}
