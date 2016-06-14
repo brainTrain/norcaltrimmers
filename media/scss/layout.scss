@@ -3,12 +3,25 @@ $header-logo-color: #B4D455;
 $header-background-color: #1D1917;
 $header-nav-color: #7C7372;
 $header-nav-color-active: #FFF;
+$content-background-color: #F5F5F5;
+$page-background-color: #7E8F7C;
 
 // dimension vars
 $header-height: 50px;
 
+body {
+    background-color: $page-background-color;
+}
+
 .content {
     padding-top: $header-height;
+    margin: 0 25px;
+}
+
+.content-section {
+    background-color: $content-background-color;
+    padding: 15px;
+    margin: 25px 0;
 }
 
 header {
