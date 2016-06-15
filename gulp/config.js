@@ -8,7 +8,7 @@ export default {
         dest: 'public/js/'
     },
     styles: {
-        src: 'media/scss/**/*.scss',
+        src: 'media/scss/norcaltrimmers.scss',
         dest: 'public/css'
     },
     images: {
