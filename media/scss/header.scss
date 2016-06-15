@@ -1,0 +1,31 @@
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: $header-height;
+    background-color: $header-background-color;
+
+    nav {
+        float: left;
+    }
+}
+
+.header-logo {
+    cursor: pointer;
+    color: $header-logo-color;
+    float: left;
+    line-height: $header-height;
+    padding: 0 15px;
+}
+
+.header-nav-item {
+    cursor: pointer;
+    color: $header-nav-color;
+    line-height: $header-height;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+    &:hover {
+        color: $header-nav-color-active;
+    }
+}

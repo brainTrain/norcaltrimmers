@@ -1,54 +1,3 @@
-// color vars
-$header-logo-color: #B4D455;
-$header-background-color: #1D1917;
-$header-nav-color: #7C7372;
-$header-nav-color-active: #FFF;
-
-$content-background-color: #F5F5F5;
-
-$page-background-color: #7E8F7C;
-
-$hero-text-color: #FFF;
-
-// dimension vars
-$header-height: 50px;
-$hero-height: 250px;
-
-body {
-    font: 14px/1.4 "georgia";
-    background-color: $page-background-color;
-}
-
-h1 {
-    font-size: 96px;
-}
-
-h2 {
-    font-size: 64px;
-}
-
-h3 {
-    font-size: 32px;
-}
-
-.hero {
-    height: $hero-height;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(/images/trim-hero.jpeg);
-
-}
-
-.hero-title-text {
-    text-align: center;
-    color: $hero-text-color;
-}
-
-.hero-secondary-text {
-    text-align: center;
-    color: $hero-text-color;
-}
-
 .content {
     padding-top: $header-height;
     margin: 0 25px;
@@ -56,37 +5,5 @@ h3 {
 
 .content-section {
     background-color: $content-background-color;
-    padding: 15px;
     margin: 25px 0;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    height: $header-height;
-    background-color: $header-background-color;
-
-    nav {
-        float: left;
-    }
-}
-
-.header-logo {
-    cursor: pointer;
-    color: $header-logo-color;
-    float: left;
-    line-height: $header-height;
-    padding: 0 15px;
-}
-
-.header-nav-item {
-    cursor: pointer;
-    color: $header-nav-color;
-    line-height: $header-height;
-    text-transform: uppercase;
-    margin-right: 10px;
-
-    &:hover {
-        color: $header-nav-color-active;
-    }
 }
