@@ -11,6 +11,10 @@ export default {
         src: 'media/scss/**/*.scss',
         dest: 'public/css'
     },
+    images: {
+        src: 'media/images/**/*',
+        dest: 'public/images'
+    },
     views: {
         src: 'index.html',
         dest: 'public/'
