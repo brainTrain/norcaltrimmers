@@ -1,5 +1,4 @@
 // plugins
-@import "node_modules/susy/sass/susy";
 @import "node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 @import 'reset';
@@ -8,8 +7,8 @@
 @import 'variables';
 @import 'grids';
 @import 'base';
+@import 'layout';
 @import 'header';
 @import 'hero';
 @import 'services';
 @import 'about';
-@import 'layout';
