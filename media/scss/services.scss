@@ -1,11 +1,28 @@
-.service-container {
-    max-width: 200px;
-    float: left;
-    display: block;
-    margin-right: 5px;
-    background-color: $service-container-background-color;
-}
-
 .services-content {
     padding: 15px;
+}
+
+.services-content-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.service-container {
+    max-width: 200px;
+    height: 200px;
+    padding: 10px;
+    display: block;
+    background-color: $service-container-background-color;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
