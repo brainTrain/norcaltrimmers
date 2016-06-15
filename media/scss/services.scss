@@ -18,11 +18,16 @@
 }
 
 .service-container {
-    max-width: 200px;
     height: 200px;
+    width: 100%;
     padding: 10px;
-    display: block;
     background-color: $service-container-background-color;
-    margin-right: 5px;
     margin-bottom: 5px;
+    text-align: center;
+
+    @include breakpoint($breakpoint-tablet) {
+        text-align: initial;
+        max-width: 200px;
+        margin-right: 5px;
+    }
 }
