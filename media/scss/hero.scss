@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+
+    @include breakpoint($breakpoint-tablet) {
+        background-position: 50% 10%;
+    }
 }
 
 .hero-overlay {
@@ -18,9 +22,31 @@
 .hero-title-text {
     text-align: center;
     color: $hero-text-color;
+    font-family: 'Ewert', cursive;
+    font-size: 52px;
+    margin-top: 30px;    
+
+    @include breakpoint($breakpoint-desktop) {
+        margin-top: 50px;    
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+        margin-top: 60px;
+        font-size: 72px;
+    }
 }
 
 .hero-secondary-text {
     text-align: center;
     color: $hero-text-color;
+
+    @include breakpoint($breakpoint-desktop) {
+        margin-top: 35px;
+        font-size: 30px;
+    }
+}
+
+.hero-text-accent {
+    color: #FF8C00;
+    font-weight: 900;
 }
