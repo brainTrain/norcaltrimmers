@@ -16,7 +16,12 @@ header {
     color: $header-logo-color;
     float: left;
     line-height: $header-height;
-    padding: 0 15px;
+    display: none;
+
+    @include breakpoint($breakpoint-mobile) {
+        display: block;
+        padding: 0 15px;
+    }
 }
 
 .header-nav-item {

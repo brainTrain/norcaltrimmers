@@ -5,24 +5,22 @@
 
 .about-container {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: flex-end;
 }
 
 .about-tile {
     background-color: $service-container-background-color;
     max-width: 500px;
-    height: 100px;
+    min-height: 100px;
     margin-right: 5px;
     margin-bottom: 5px;
     padding: 10px;
 }
 
 .about-content-title {
+    font-size: 28px;
+    margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
 }
