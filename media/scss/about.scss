@@ -9,6 +9,14 @@
     justify-content: center;
 }
 
+.about-content-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+}
+
 .about-tile {
     background-color: $service-container-background-color;
     max-width: 500px;
@@ -16,11 +24,4 @@
     margin-right: 5px;
     margin-bottom: 5px;
     padding: 10px;
-}
-
-.about-content-title {
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
-    text-transform: uppercase;
 }
