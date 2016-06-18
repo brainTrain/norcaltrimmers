@@ -4,5 +4,5 @@ import gulp from 'gulp';
 import runSequence from 'run-sequence';
 
 gulp.task('build', () => {
-    runSequence(['styles', 'views', 'images']);
+    runSequence(['scripts', 'styles', 'views', 'images']);
 });
