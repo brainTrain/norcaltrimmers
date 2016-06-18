@@ -76,12 +76,29 @@
             <section class="contact-content content-section">
                 <h2 class="contact-content-title">Book A Reservation</h2>
                 <article class="contact-container">
-                    <form class="contact-form">
-                        <input class="contact-name form-input" placeholder="Name" />
-                        <input class="contact-email form-input" placeholder="Email" />
-                        <input class="contact-subject form-input" placeholder="Subject" />
-                        <textarea class="contact-message form-input" placeholder="Message"></textarea>
-                        <input type="button" name="submit" value="Submit" />
+                    <form class="contact-form" action="https://formspree.io/abductee@gmail.com" method="POST">
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <label class="form-input-wrapper">
+                            <span class="form-input-text">Name</span>
+                            <span class="required-field-marker">*</span>
+                            <input class="contact-name form-input" type="text" name="name" required />
+                        </label>
+                        <label class="form-input-wrapper">
+                            <span class="form-input-text">Email</span>
+                            <span class="required-field-marker">*</span>
+                            <input class="contact-email form-input" type="email" name="email" required />
+                        </label>
+                        <label class="form-input-wrapper">
+                            <span class="form-input-text">Subject</span>
+                            <span class="required-field-marker">*</span>
+                            <input class="contact-subject form-input" type="text" name="_subject" required />
+                        </label>
+                        <label class="form-input-wrapper">
+                            <span class="form-input-text">Message</span>
+                            <span class="required-field-marker">*</span>
+                            <textarea class="contact-message form-input" type="text" name="message" required></textarea>
+                        </label>
+                        <input type="submit" value="Submit" required />
                     </form>
                 </article>
             </section>

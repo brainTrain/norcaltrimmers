@@ -14,12 +14,20 @@
 .contact-container {
 }
 
+.required-field-marker {
+    color: red;
+}
+
+.form-input-text {
+}
+
 .form-input {
     display: block;
     border: 1px solid $contact-form-border-color;
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
 
     @include breakpoint($breakpoint-mobile) {
         width: 400px;
