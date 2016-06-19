@@ -1,3 +1,3 @@
-var scrollToElement = require('./scroll-to-element');
+var scrollHandler = require('./scroll-handler');
 
-scrollToElement();
+scrollHandler();
