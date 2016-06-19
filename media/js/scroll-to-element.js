@@ -1,3 +1,5 @@
-(function() {
-   console.log('oh hai'); 
-})();
+function scrollToElement() {
+    console.log('oh hai'); 
+}
+
+module.exports = scrollToElement;

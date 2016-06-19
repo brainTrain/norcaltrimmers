@@ -4,7 +4,7 @@ export default {
     port: 4000,
     buildDir: 'public/',
     scripts: {
-        src: './media/**/*.js',
+        src: './media/js/index.js',
         dest: 'public/js/'
     },
     styles: {
