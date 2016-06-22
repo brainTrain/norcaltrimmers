@@ -1,5 +1,5 @@
 function scrollToElement(element, container) {
-    var containerPadding = 0;
+    let containerPadding = 0;
     // only compenstate for container top padding if container exists
     if(container) {
         containerPadding = window.getComputedStyle(container).getPropertyValue('padding-top');
