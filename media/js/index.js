@@ -1,3 +1,3 @@
 var scrollHandler = require('./scroll-handler');
 
-scrollHandler('.header-nav-item');
+scrollHandler('[js-click=header-nav-item]');
