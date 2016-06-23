@@ -88,7 +88,11 @@ header {
   float: left;
   line-height: 50px;
   font-size: 12px;
-  margin-right: 5px; }
+  margin-right: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media (min-width: 580px) {
     .header-logo {
       font-size: 14px; } }
@@ -98,7 +102,11 @@ header {
   color: #7C7372;
   line-height: 50px;
   text-transform: uppercase;
-  margin-right: 10px; }
+  margin-right: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   .header-nav-item:hover {
     color: #FFF; }
 
