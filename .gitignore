@@ -4,5 +4,3 @@
 *.map
 .sass-cache
 node_modules/
-public/
-demo/**/*.templates.js
