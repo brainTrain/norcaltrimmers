@@ -19,6 +19,7 @@ export default {
     },
     views: {
         src: 'app/index.html',
+        destDev: 'public/',
         dest: ''
     }
 };
