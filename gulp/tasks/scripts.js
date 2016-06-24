@@ -20,6 +20,6 @@ gulp.task('scripts', () => {
         .pipe(gulp.dest(config.scripts.devDest))
         .pipe(buffer())
         .pipe(uglify())
-        //.pipe(rev())
+        .pipe(rev())
         .pipe(gulp.dest(config.scripts.prodDest));
 });

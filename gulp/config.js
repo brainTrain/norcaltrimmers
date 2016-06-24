@@ -24,5 +24,8 @@ export default {
         src: 'app/index.html',
         devDest: 'dev/',
         prodDest: ''
+    },
+    manifest: {
+        prodDest : 'public/rev-manifest.json'
     }
 };
