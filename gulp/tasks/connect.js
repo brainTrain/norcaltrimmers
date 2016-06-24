@@ -7,7 +7,7 @@ import config from '../config';
 gulp.task('connect', () => {
     connect.server({
         livereload: true,
-        root: config.buildDir,
+        root: config.devDir,
         port: config.port
     });
 });

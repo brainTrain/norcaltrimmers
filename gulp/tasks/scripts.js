@@ -14,5 +14,6 @@ gulp.task('scripts', () => {
         .bundle()
         .pipe(source('main.js'))
         // saves it the public/js/ directory
-        .pipe(gulp.dest(config.scripts.dest));
+        .pipe(gulp.dest(config.scripts.devDest))
+        .pipe(gulp.dest(config.scripts.prodDest));
 });

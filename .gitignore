@@ -4,4 +4,4 @@
 *.map
 .sass-cache
 node_modules/
-public/index.html
+dev/

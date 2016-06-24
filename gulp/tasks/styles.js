@@ -9,5 +9,6 @@ gulp.task('styles', () => {
     return gulp.src(config.styles.src)
         .pipe(sass())
         .pipe(autoprefixer('last 2 versions', '> 1%', 'ie 8'))
-        .pipe(gulp.dest(config.styles.dest));
+        .pipe(gulp.dest(config.styles.devDest))
+        .pipe(gulp.dest(config.styles.prodDest));
 });

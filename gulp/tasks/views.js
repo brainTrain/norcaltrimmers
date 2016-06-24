@@ -6,6 +6,6 @@ import config from '../config';
 // Views task
 gulp.task('views', () => {
     return gulp.src(config.views.src)
-                .pipe(gulp.dest(config.views.dest))
-                .pipe(gulp.dest(config.views.destDev));
+        .pipe(gulp.dest(config.views.devDest))
+        .pipe(gulp.dest(config.views.prodDest));
 });

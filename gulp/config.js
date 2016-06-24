@@ -2,24 +2,27 @@
 
 export default {
     port: 4000,
-    buildDir: 'public/',
+    devDir: 'dev/',
     scripts: {
         watch: './app/media/js/*.js',
         src: './app/media/js/index.js',
-        dest: 'public/js/'
+        devDest: 'dev/js',
+        prodDest: 'public/js/'
     },
     styles: {
         watch: 'app/media/scss/**/*.scss',
         src: 'app/media/scss/norcaltrimmers.scss',
-        dest: 'public/css'
+        devDest: 'dev/css',
+        prodDest: 'public/css'
     },
     images: {
         src: 'app/media/images/**/*',
-        dest: 'public/images'
+        devDest: 'dev/images',
+        prodDest: 'public/images',
     },
     views: {
         src: 'app/index.html',
-        destDev: 'public/',
-        dest: ''
+        devDest: 'dev/',
+        prodDest: ''
     }
 };
