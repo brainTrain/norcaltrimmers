@@ -4,7 +4,10 @@ import gulp from 'gulp';
 import config from '../config';
 import browserify from 'browserify';
 import source from 'vinyl-source-stream';
+import buffer from 'vinyl-buffer';
 import babelify from 'babelify';
+import rev from 'gulp-rev';
+import uglify from 'gulp-uglify';
 
 gulp.task('scripts', () => {
     // Grabs the app.js file
@@ -15,5 +18,8 @@ gulp.task('scripts', () => {
         .pipe(source('main.js'))
         // saves it the public/js/ directory
         .pipe(gulp.dest(config.scripts.devDest))
+        .pipe(buffer())
+        .pipe(uglify())
+        //.pipe(rev())
         .pipe(gulp.dest(config.scripts.prodDest));
 });
