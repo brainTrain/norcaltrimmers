@@ -23,7 +23,9 @@ export default {
     views: {
         src: 'app/index.html',
         devDest: 'dev/',
-        prodDest: ''
+        prodDest: '',
+        prodBaseUrl: 'public',
+        devBaseUrl: ''
     },
     manifest: {
         prodDest : 'public/js/rev-manifest.json'
