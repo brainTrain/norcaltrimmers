@@ -23,7 +23,7 @@ gulp.task('views', () => {
         .pipe(revReplace({manifest: manifest}))
         .pipe(cdnizer({
             files: config.cdn.files,
-            defaultCDNBase: config.cdn.prodBaseUrl
+            defaultCDNBase: '/' + config.cdn.prodBaseUrl
         }))
         .pipe(gulp.dest(config.views.prodDest));
 });
