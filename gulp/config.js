@@ -26,6 +26,6 @@ export default {
         prodDest: ''
     },
     manifest: {
-        prodDest : 'public/rev-manifest.json'
+        prodDest : 'public/js/rev-manifest.json'
     }
 };

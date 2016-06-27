@@ -16,10 +16,11 @@ gulp.task('scripts', () => {
         // bundles it and creates a file called main.js
         .bundle()
         .pipe(source('main.js'))
-        // saves it the public/js/ directory
         .pipe(gulp.dest(config.scripts.devDest))
         .pipe(buffer())
         .pipe(uglify())
-        //.pipe(rev())
+        .pipe(rev())
+        .pipe(rev.manifest())
+        // saves it the public/js/ directory
         .pipe(gulp.dest(config.scripts.prodDest));
 });
