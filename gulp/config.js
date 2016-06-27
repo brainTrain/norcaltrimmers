@@ -23,9 +23,24 @@ export default {
     views: {
         src: 'app/index.html',
         devDest: 'dev/',
-        prodDest: '',
+        prodDest: ''
+    },
+    cdn: {
         prodBaseUrl: 'public',
-        devBaseUrl: ''
+        devBaseUrl: '',
+        files: [
+            '/js/*.js',
+            '/css/*.css',
+            'dev/css/*.css',
+            'public/css/*.css',
+            'dev/js/*.js',
+            'public/js/*.js',
+            'dev/images/*.{jpg,jpeg,png,gif,svg}',
+            'public/images/*.{jpg,jpeg,png,gif,svg}'
+        ],
+        imageFiles:[
+            '/images/*.*'
+        ]
     },
     manifest: {
         prodDest : 'public/js/rev-manifest.json'

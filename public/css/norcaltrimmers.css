@@ -114,7 +114,7 @@ header {
   position: relative;
   height: 300px;
   overflow: hidden;
-  background: linear-gradient(to top right, transparent, rgba(0, 0, 0, 0.6)), url(/norcaltrimmers/public/images/trim-hero.jpeg);
+  background: linear-gradient(to top right, transparent, rgba(0, 0, 0, 0.6)), url(public/images/trim-hero.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%; }
@@ -152,7 +152,7 @@ header {
   position: relative;
   height: 300px;
   overflow: hidden;
-  background: url(/norcaltrimmers/public/images/trim-medium.jpeg);
+  background: url(public/images/trim-medium.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%; }
