@@ -8,10 +8,15 @@ import cdnizer from 'gulp-cdnizer';
 
 // Views task
 gulp.task('views', () => {
-    let manifest = gulp.src([
-        config.manifest.prodDest
+    let jsManifest = gulp.src([
+        config.manifest.jsProdDest
     ]);
 
+    let cssManifest = gulp.src([
+        config.manifest.cssProdDest
+    ]);
+
+    // TODO: figure out a DRY way to do this
     return gulp.src(config.views.src)
         .pipe(cdnizer({
             files: config.cdn.files,
@@ -20,7 +25,8 @@ gulp.task('views', () => {
         .pipe(gulp.dest(config.views.devDest))
         .pipe(buffer())
         .pipe(gulp.src(config.views.src))
-        .pipe(revReplace({manifest: manifest}))
+        .pipe(revReplace({manifest: jsManifest}))
+        .pipe(revReplace({manifest: cssManifest}))
         .pipe(cdnizer({
             files: config.cdn.files,
             defaultCDNBase: `/norcaltrimmers/${config.cdn.prodBaseUrl}`
