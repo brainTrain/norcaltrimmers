@@ -14,11 +14,12 @@
 
 .hero-title-text {
     text-align: center;
-    color: $primary-color;
+    //color: $primary-color;
+    color: $white;
     font-family: 'Ewert', cursive;
     font-size: 50px;
     margin-top: 30px;
-    background-color: $secondary-color;
+    //background-color: $secondary-color;
 
     @include breakpoint($breakpoint-mobile) {
         margin-top: 50px;
