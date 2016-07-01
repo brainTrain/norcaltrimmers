@@ -21,7 +21,7 @@
     margin-top: 30px;
     //background-color: $secondary-color;
 
-    @include breakpoint($breakpoint-mobile) {
+    @include breakpoint($breakpoint-tablet) {
         margin-top: 50px;
         font-size: 72px;
     }
@@ -31,7 +31,7 @@
     text-align: center;
     color: $hero-text-color;
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
 
     @include breakpoint($breakpoint-tablet) {
         font-size: 30px;
@@ -58,4 +58,8 @@
     color: $white;
     font-size: 20px;
     font-weight: 600;
+
+    @include breakpoint($breakpoint-tablet) {
+        margin-top: 50px;
+    }
 }
