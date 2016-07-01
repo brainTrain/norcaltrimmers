@@ -26,7 +26,7 @@ gulp.task('styles', () => {
             files: config.cdn.imageFiles,
             defaultCDNBase: `/norcaltrimmers/${config.cdn.prodBaseUrl}`
         }))
-        .pipe(rev())
-        .pipe(rev.manifest())
+        //.pipe(rev())
+        //.pipe(rev.manifest())
         .pipe(gulp.dest(config.styles.prodDest));
 });
