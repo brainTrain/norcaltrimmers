@@ -1,8 +1,17 @@
 body {
     font-size: 15px;
     font-family: 'Lato', sans-serif;
-    background-color: $page-background-color;
+    //background-color: $page-background-color;
+    background-color: $white;
     color: $base-text-color;
+}
+
+.content {
+    padding-top: $header-height;
+}
+
+.content-section {
+    background-color: $content-background-color;
 }
 
 /*
