@@ -24,8 +24,13 @@
     //             4px 6px 0 $secondary-color,
     //             6px 8px 0 $accent-color-2;
 
-    text-shadow: $black -2px -1px 0.2em;
+    //text-shadow: 0 0 1px $secondary-color,
+    //             0 0 1px $secondary-color,
+    //             0 0 1px $secondary-color,
+    //             0 0 1px $secondary-color,
+    //             $black -2px -1px 0.2em;
     
+    text-shadow: $black -2px -1px 0.2em;
 
     @include breakpoint($breakpoint-tablet) {
         margin-top: 50px;
