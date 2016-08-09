@@ -4,7 +4,7 @@ header {
     position: fixed;
     width: 100%;
     height: $header-height;
-    background-color: $header-background-color;
+    background-color: $black;
 
     nav {
         float: left;
@@ -27,13 +27,13 @@ header {
 
 .header-nav-item {
     cursor: pointer;
-    color: $header-nav-color;
+    color: $dark-white;
     line-height: $header-height;
     text-transform: uppercase;
     margin-right: 10px;
     user-select: none;
 
     &:hover {
-        color: $header-nav-color-active;
+        color: $white;
     }
 }

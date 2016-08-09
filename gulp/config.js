@@ -1,7 +1,7 @@
 'use strict';
 
 export default {
-    port: 4000,
+    port: 4200,
     devDir: 'dev/',
     scripts: {
         watch: './app/media/js/*.js',
