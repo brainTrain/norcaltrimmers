@@ -1,5 +1,5 @@
 .services-content {
-    padding: 15px;
+    padding: 60px 15px;
     background-color: $primary-color;
 }
 
@@ -10,7 +10,7 @@
     text-align: center;
     text-transform: uppercase;
     //text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
-    text-shadow: 2px 2px 0px rgba(245, 245, 245, 0.2);
+    //text-shadow: 2px 2px 0px rgba(245, 245, 245, 0.2);
 }
 
 .services-container {
@@ -23,17 +23,46 @@
     height: 160px;
     width: 100%;
     padding: 10px;
-    //background-color: $service-container-background-color;
-    background-color: $white;
-    margin-bottom: 5px;
     text-align: center;
-    border: 2px solid $secondary-color;
+    color: $white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+    &:after {
+        content: "}";
+        font-size: 260px;
+        position: absolute;
+        right: -65px;
+        top: -30px;
+        color: $secondary-color;
+        text-shadow: 2px 2px 0px $accent-color-1;
+    }
+
+    &:before {
+        content: "{";
+        font-size: 260px;
+        position: absolute;
+        left: -65px;
+        top: -30px;
+        color: $secondary-color;
+        text-shadow: 2px 2px 0px $accent-color-1;
+    }
 
     @include breakpoint($breakpoint-mobile) {
         height: 240px;
         text-align: initial;
         max-width: 200px;
-        margin-right: 5px;
+        margin: 0 100px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
@@ -41,4 +70,5 @@
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 15px;
+    text-align: center;
 }
