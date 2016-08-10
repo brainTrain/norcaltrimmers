@@ -9,6 +9,7 @@
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
+    display: none;
     //text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
     //text-shadow: 2px 2px 0px rgba(245, 245, 245, 0.2);
 }
@@ -33,24 +34,22 @@
     margin-bottom: 20px;
 
 
-    &:after {
-        content: "}";
+    &:after, &:before {
         font-size: 260px;
         position: absolute;
-        right: -65px;
         top: -30px;
         color: $secondary-color;
         text-shadow: 2px 2px 0px $accent-color-1;
     }
 
+    &:after {
+        content: "}";
+        right: -65px;
+    }
+
     &:before {
         content: "{";
-        font-size: 260px;
-        position: absolute;
         left: -65px;
-        top: -30px;
-        color: $secondary-color;
-        text-shadow: 2px 2px 0px $accent-color-1;
     }
 
     @include breakpoint($breakpoint-mobile) {
