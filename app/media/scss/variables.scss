@@ -1,37 +1,34 @@
 // color vars
 $header-logo-color: #B4D455;
-$header-background-color: #1D1917;
-$header-nav-color: #7C7372;
-$header-nav-color-active: #FFF;
-
-$base-text-color: #131513;
 
 $content-background-color: #F5F5F5;
 $about-background-color: #E8E8E8;
-
-$page-background-color: #7E8F7C;
 
 $service-container-background-color: #D7E4EF;
 
 $contact-form-border-color: #E8E8E8;
 
+// attempt at abstract color variables
+$primary-color: #768352;
+//$secondary-color: #CBD265;
+//$secondary-color: #FADF2B;
+$secondary-color: #EDBF47;
+$black: #0E0E0E;
+//$black: #1A0218;
+//$white: #F5F7F2;
+$white: #F2F0EF;
+$dark-white: #7C7372;
+//$accent-color-1: #FF8C00;
+$accent-color-1: #D47E16;
+//$accent-color-2: #80505E;
+//$accent-color-2: #B659C2;
+$accent-color-2: #9B6679;
+
 // dimension vars
 $header-height: 50px;
-$hero-height: 300px;
+$hero-height: 400px;
 
 $breakpoint-mobile: 580px;
 $breakpoint-mobile-large: 665px;
 $breakpoint-tablet: 824px;
 $breakpoint-desktop: 1050px;
-
-$primary-color: #768352;
-//$secondary-color: #CBD265;
-//$secondary-color: #FADF2B;
-$secondary-color: #EDBF47;
-$black: #1A0218;
-//$white: #F5F7F2;
-$white: #F2F0EF;
-$accent-color-1: #FF8C00;
-//$accent-color-2: #80505E;
-//$accent-color-2: #B659C2;
-$accent-color-2: #9B6679;
