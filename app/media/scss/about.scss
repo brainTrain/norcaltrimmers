@@ -17,6 +17,27 @@
     text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
 }
 
+.about-text-accent {
+    font-style: italic;
+}
+
+.about-secondary-text {
+    text-align: center;
+    color: $black;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-style: italic;
+
+    @include breakpoint($breakpoint-mobile-large) {
+        font-size: 25px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+        font-size: 30px;
+    }
+}
+
+
 .about-tile {
     background-color: $service-container-background-color;
     max-width: 500px;
