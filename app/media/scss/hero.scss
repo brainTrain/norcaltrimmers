@@ -7,6 +7,10 @@
     background-size: cover;
     background-position: 50%;
 
+    @include breakpoint($breakpoint-mobile) {
+        padding: 0 50px;
+    }
+
     @include breakpoint($breakpoint-tablet) {
         background-position: 50% 10%;
     }
