@@ -1,5 +1,10 @@
 .contact-content {
     padding: 60px 15px;
+    background-color: $accent-color-2;
+    border: 4px solid $accent-color-1;
+    border-left: 0;
+    border-right: 0;
+    color: $white;
 
     @include breakpoint($breakpoint-mobile) {
         padding: 60px 50px;
@@ -7,12 +12,20 @@
 }
 
 .contact-content-title {
-    font-size: 28px;
-    padding-bottom: 15px;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    letter-spacing: 10px;
+}
+
+.contact-secondary-text {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .contact-container {
@@ -23,12 +36,13 @@
 }
 
 .contact-logo-image {
+    border-radius: 170px;
+    max-height: 320px;
+    max-width: 320px;
     display: none;
 
     @include breakpoint($breakpoint-tablet) {
         display: initial;
-        max-height: 320px;
-        max-width: 320px;
     }
 }
 
@@ -41,7 +55,6 @@
 }
 
 .required-field-marker {
-    color: red;
 }
 
 .form-input-text {
@@ -55,7 +68,7 @@
     margin-bottom: 15px;
     margin-top: 5px;
 
-    @include breakpoint($breakpoint-mobile) {
+    @include breakpoint($breakpoint-tablet) {
         width: 400px;
     }
 }
