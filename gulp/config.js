@@ -36,8 +36,8 @@ export default {
             'public/css/*.css',
             'dev/js/*.js',
             'public/js/*.js',
-            'dev/images/*.{jpg,jpeg,png,gif,svg}',
-            'public/images/*.{jpg,jpeg,png,gif,svg}'
+            'dev/images/*.{jpg,jpeg,png,gif,svg,ico}',
+            'public/images/*.{jpg,jpeg,png,gif,svg,ico}'
         ],
         imageFiles:[
             '/images/*.*'
