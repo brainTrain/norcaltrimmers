@@ -16,6 +16,28 @@
 }
 
 .contact-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-logo-image {
+    display: none;
+
+    @include breakpoint($breakpoint-tablet) {
+        display: initial;
+        max-height: 320px;
+        max-width: 320px;
+    }
+}
+
+.contact-form {
+    width: 100%;
+
+    @include breakpoint($breakpoint-tablet) {
+        width: initial;
+    }
 }
 
 .required-field-marker {
