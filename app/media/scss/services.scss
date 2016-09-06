@@ -18,7 +18,7 @@
     text-align: center;
     text-transform: uppercase;
     color: $white;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
 
     @include breakpoint($breakpoint-tablet) {
         font-size: 45px;
