@@ -13,6 +13,7 @@
 
 .contact-content-title {
     font-size: 25px;
+    line-height: 30px;
     font-weight: 900;
     margin-bottom: 10px;
     font-weight: 900;
@@ -21,6 +22,7 @@
     letter-spacing: 10px;
 
     @include breakpoint($breakpoint-mobile) {
+        line-height: initial;
         font-size: 35px;
     }
 }
