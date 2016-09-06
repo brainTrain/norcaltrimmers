@@ -31,6 +31,7 @@ export default {
         files: [
             '/js/*.js',
             '/css/*.css',
+            '/images/*.*',
             'dev/css/*.css',
             'public/css/*.css',
             'dev/js/*.js',
