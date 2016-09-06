@@ -2,6 +2,10 @@
     padding: 60px 15px;
     background-color: $secondary-color;
     color: $white;
+
+    @include breakpoint($breakpoint-mobile) {
+        padding: 60px 50px;
+    }
 }
 
 .about-container {
@@ -10,13 +14,19 @@
     justify-content: center;
 
     p {
-        font-size: 25px;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+
+        @include breakpoint($breakpoint-desktop) {
+            text-align: initial;
+        }
 
         &:first-of-type {
-            margin-right: 15px;
             border-bottom: 2px dotted $white;
 
             @include breakpoint($breakpoint-desktop) {
+                margin-right: 15px;
                 border-right: 2px dotted $white;
                 border-bottom: none;
             }
