@@ -12,13 +12,17 @@
 }
 
 .contact-content-title {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 900;
     margin-bottom: 10px;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 10px;
+
+    @include breakpoint($breakpoint-mobile) {
+        font-size: 35px;
+    }
 }
 
 .contact-secondary-text {
