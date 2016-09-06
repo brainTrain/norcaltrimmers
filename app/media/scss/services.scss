@@ -2,7 +2,7 @@
     padding: 0 15px;
     padding-top: 50px;
     background-color: $primary-color;
-    border: 4px solid $secondary-color;
+    border: 4px solid $accent-color-1;
 }
 
 .services-content-title {
@@ -56,8 +56,8 @@
 
     &:after, &:before {
         position: absolute;
-        color: $secondary-color;
-        text-shadow: 2px 2px 0px $accent-color-1;
+        color: $accent-color-1;
+        text-shadow: 2px 2px 0px $accent-color-2;
         top: -30px;
         font-size: 235px;
 

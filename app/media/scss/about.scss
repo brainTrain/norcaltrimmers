@@ -1,45 +1,53 @@
 .about-content {
     padding: 60px 15px;
-    background-color: $about-background-color;
+    background-color: $secondary-color;
+    color: $white;
 }
 
 .about-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    p {
+        font-size: 25px;
+
+        &:first-of-type {
+            margin-right: 15px;
+            border-bottom: 2px dotted $white;
+
+            @include breakpoint($breakpoint-desktop) {
+                border-right: 2px dotted $white;
+                border-bottom: none;
+            }
+        }
+    }
 }
 
 .about-content-title {
-    font-size: 28px;
-    padding-bottom: 15px;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+
+    @include breakpoint($breakpoint-tablet) {
+        font-size: 45px;
+    }
+}
+
+.about-secondary-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .about-text-accent {
     font-style: italic;
 }
 
-.about-secondary-text {
-    text-align: center;
-    color: $black;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-style: italic;
-
-    @include breakpoint($breakpoint-mobile-large) {
-        font-size: 25px;
-    }
-
-    @include breakpoint($breakpoint-tablet) {
-        font-size: 30px;
-    }
-}
-
-
 .about-tile {
-    background-color: $service-container-background-color;
     max-width: 500px;
     min-height: 100px;
     margin-right: 5px;
