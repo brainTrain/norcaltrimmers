@@ -26,7 +26,7 @@
             border-bottom: 2px dotted $white;
 
             @include breakpoint($breakpoint-desktop) {
-                margin-right: 15px;
+                margin-right: 16px;
                 border-right: 2px dotted $white;
                 border-bottom: none;
             }
@@ -36,7 +36,7 @@
 
 .about-content-title {
     font-size: 35px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-weight: 900;
     margin-bottom: 10px;
     text-align: center;
@@ -62,6 +62,12 @@
     max-width: 500px;
     min-height: 100px;
     margin-right: 5px;
-    margin-bottom: 5px;
     padding: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 36px;
+
+    @include breakpoint($breakpoint-desktop) {
+        padding: 10px;
+        margin-bottom: 0;
+    }
 }
