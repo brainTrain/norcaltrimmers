@@ -1,0 +1,19 @@
+footer {
+    position: relative;
+    height: $footer-height;
+    background-color: transparent;
+
+    nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    a {
+        color: $white;
+    }
+}

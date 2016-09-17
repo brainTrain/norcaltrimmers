@@ -31,13 +31,9 @@ header {
 
 .header-nav-item {
     cursor: pointer;
-    color: $dark-white;
+    color: $white;
     line-height: $header-height;
     text-transform: uppercase;
     margin-right: 10px;
     user-select: none;
-
-    &:hover {
-        color: $white;
-    }
 }
