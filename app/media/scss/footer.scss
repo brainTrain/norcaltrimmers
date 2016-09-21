@@ -15,5 +15,11 @@ footer {
 
     a {
         color: $white;
+
+        svg {
+            fill: $white;
+            height: 50px;
+            width: 50px;
+        }
     }
 }

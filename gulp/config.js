@@ -25,6 +25,24 @@ export default {
         devDest: 'dev/',
         prodDest: ''
     },
+    svg: {
+        src: 'app/icons/*.svg',
+        devDest: 'dev/icons',
+        prodDest: 'public/icons',
+        config: {
+            mode: {
+                symbol: {
+                    render: {
+                        css: false,
+                        scss: false
+                    },
+                    dest: 'sprite',
+                    prefix: '.svg-%s',
+                    example: false
+                }
+            }
+        }
+    },
     cdn: {
         prodBaseUrl: 'public',
         devBaseUrl: '',
