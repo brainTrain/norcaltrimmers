@@ -17,16 +17,13 @@ header {
 
 .header-logo {
     cursor: pointer;
-    color: $header-logo-color;
-    float: left;
-    line-height: $header-height;
-    font-size: 12px;
-    margin-right: 5px;
+    position: relative;
+    top: 5px;
+    height: 25px;
+    width: 25px;
+    margin-right: 25px;
+    display: inline-block;
     user-select: none;
-
-    @include breakpoint($breakpoint-mobile) {
-        font-size: 14px;
-    }
 }
 
 .header-nav-item {
