@@ -3,6 +3,7 @@
 export default {
     port: 4200,
     devDir: 'dev/',
+    prodDir: 'public/',
     scripts: {
         watch: './app/media/js/*.js',
         src: './app/media/js/index.js',
