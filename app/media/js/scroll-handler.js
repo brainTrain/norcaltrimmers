@@ -15,7 +15,7 @@ function scrollEvent() {
     let container = document.querySelectorAll(`#${ menuType}-container`)[0];
     let title = document.querySelectorAll(`#${ menuType}-title`)[0];
 
-    scrollToElement(title, container);
+    scrollToElement(container);
 }
 
 module.exports = scrollHandler;
