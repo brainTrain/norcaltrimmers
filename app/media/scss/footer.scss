@@ -2,6 +2,7 @@ footer {
     position: relative;
     height: $footer-height;
     background-color: $secondary-color;
+    border-top: 4px solid $accent-color-1;
 
     nav {
         display: flex;

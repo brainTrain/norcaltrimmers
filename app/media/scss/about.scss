@@ -2,6 +2,7 @@
     padding: 60px 15px;
     background-color: $secondary-color;
     color: $white;
+    border-top: 4px solid $accent-color-1;
 
     @include breakpoint($breakpoint-mobile) {
         padding: 60px 50px;

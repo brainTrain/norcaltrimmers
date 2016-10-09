@@ -1,9 +1,7 @@
 .services-content {
     padding: 60px 15px;
     background-color: $primary-color;
-    border: 4px solid $accent-color-1;
-    border-left: 0;
-    border-right: 0;
+    border-top: 4px solid $accent-color-1;
 
     @include breakpoint($breakpoint-mobile) {
         padding: 60px 50px;
