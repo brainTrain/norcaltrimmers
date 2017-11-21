@@ -12,7 +12,7 @@ function scrollHandler(selector) {
 
 function scrollEvent() {
     let menuType = this.dataset.section;
-    let container = document.querySelectorAll(`#${ menuType}-container`)[0];
+    let container = document.querySelector(`#${ menuType }-container`);
 
     scrollToElement(container);
 }
