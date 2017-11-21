@@ -19,8 +19,9 @@ gulp.task('scripts', () => {
         .pipe(gulp.dest(config.scripts.devDest))
         .pipe(buffer())
         .pipe(uglify())
-        //.pipe(rev())
-        //.pipe(rev.manifest())
+        .pipe(rev())
+        .pipe(gulp.dest(config.scripts.prodDest))
+        .pipe(rev.manifest())
         // saves it the public/js/ directory
         .pipe(gulp.dest(config.scripts.prodDest));
 });
