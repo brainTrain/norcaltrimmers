@@ -25,8 +25,8 @@ gulp.task('views', () => {
         .pipe(gulp.dest(config.views.devDest))
         .pipe(buffer())
         .pipe(gulp.src(config.views.src))
-        //.pipe(revReplace({manifest: jsManifest}))
-        //.pipe(revReplace({manifest: cssManifest}))
+        .pipe(revReplace({manifest: jsManifest}))
+        .pipe(revReplace({manifest: cssManifest}))
         .pipe(cdnizer({
             files: config.cdn.files,
             defaultCDNBase: `/norcaltrimmers/${config.cdn.prodBaseUrl}`
