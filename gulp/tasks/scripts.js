@@ -13,9 +13,9 @@ gulp.task('scripts', () => {
     // Grabs the app.js file
     return browserify(config.scripts.src)
         .transform(babelify)
-        // bundles it and creates a file called main.js
+        // bundles it and creates a file called index.js
         .bundle()
-        .pipe(source('main.js'))
+        .pipe(source('index.js'))
         .pipe(gulp.dest(config.scripts.devDest))
         .pipe(buffer())
         .pipe(uglify())
