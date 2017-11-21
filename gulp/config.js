@@ -5,8 +5,8 @@ export default {
     devDir: 'dev/',
     prodDir: 'public/',
     scripts: {
-        watch: './app/media/js/*.js',
-        src: './app/media/js/index.js',
+        watch: 'app/media/js/*.js',
+        src: 'app/media/js/index.js',
         devDest: 'dev/js',
         prodDest: 'public/js/'
     },

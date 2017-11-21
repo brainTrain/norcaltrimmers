@@ -7,6 +7,8 @@ function scrollToElement(element) {
 
     var scrollElement = document.scrollingElement || document.documentElement;
     scrollElement.scrollTop = element.offsetTop - containerPadding;
+
+    console.log('uhh')
 }
 
 module.exports = scrollToElement;
