@@ -63,7 +63,7 @@ export default {
         ]
     },
     manifest: {
-        jsProdDest : '.public/js/rev-manifest.json',
+        jsProdDest : 'public/js/rev-manifest.json',
         cssProdDest : 'public/css/rev-manifest.json'
     }
 };
