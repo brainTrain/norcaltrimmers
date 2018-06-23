@@ -1,3 +1,5 @@
+import anime from 'animejs';
+
 function scrollToElement(element) {
     // get padding-top of content wrapper it's accounting for the fixed header
     const scrollContainer = document.querySelectorAll('.content')[0];
@@ -5,7 +7,13 @@ function scrollToElement(element) {
     containerPadding = parseInt(containerPadding, 10);
 
     var scrollElement = document.scrollingElement || document.documentElement;
-    scrollElement.scrollTop = element.offsetTop - containerPadding;
+    const scrollValue = element.offsetTop - containerPadding;
+
+    anime({
+        targets: scrollElement,
+        scrollTop: scrollValue,
+        easing: 'easeInOutBack',
+    });
 }
 
 module.exports = scrollToElement;
