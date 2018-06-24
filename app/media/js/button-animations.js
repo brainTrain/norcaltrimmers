@@ -31,9 +31,9 @@ function buttonAnimation (event) {
 
     inAnimationMap[animationId] = anime({
         targets: target,
-        scale: 1.15,
+        scale: 1.10,
         duration: 700,
-        borderRadius: 25,
+        borderRadius: ['0', '25px'],
     });
 }
 
@@ -48,7 +48,7 @@ function resetButtonAnimation (event) {
         targets: target,
         scale: 1,
         duration: 700,
-        borderRadius: 0,
+        borderRadius: ['25px', '0'],
     });
 }
 
