@@ -47,6 +47,8 @@ function resetButtonAnimation (event) {
 
     if (inAnimation) inAnimation.pause();
 
+    // if button is active it's focused we do not want to reset the
+    // animation values if we hover in an out of a focused button
     if (animationId !== activeAnimationId) {
       outAnimationMap[animationId] = anime({
           targets: target,
