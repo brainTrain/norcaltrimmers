@@ -26,6 +26,7 @@ function buttonAnimation (event) {
     const { target } = event;
     const animationId = target.getAttribute(ANIMATION_ID_KEY);
     const outAnimation = outAnimationMap[animationId];
+    const targetBorderRadius = target.style.borderRadius;
 
     if (outAnimation) outAnimation.pause();
 
@@ -33,23 +34,27 @@ function buttonAnimation (event) {
         targets: target,
         scale: 1.10,
         duration: 700,
-        borderRadius: ['0', '25px'],
+        borderRadius: [targetBorderRadius, '25px'],
     });
 }
 
 function resetButtonAnimation (event) {
     const { target } = event;
+    const activeElement = document.activeElement;
+    const activeAnimationId = activeElement.getAttribute(ANIMATION_ID_KEY);
     const animationId = target.getAttribute(ANIMATION_ID_KEY);
     const inAnimation = inAnimationMap[animationId];
 
     if (inAnimation) inAnimation.pause();
 
-    outAnimationMap[animationId] = anime({
-        targets: target,
-        scale: 1,
-        duration: 700,
-        borderRadius: ['25px', '0'],
-    });
+    if (animationId !== activeAnimationId) {
+      outAnimationMap[animationId] = anime({
+          targets: target,
+          scale: 1,
+          duration: 700,
+          borderRadius: ['25px', '0'],
+      });
+    }
 }
 
 module.exports = buttonAnimations;

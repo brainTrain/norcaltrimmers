@@ -29,7 +29,6 @@ function inputAnimation (event) {
         targets: target,
         scale: 1.05,
         duration: 700,
-        borderRadius: 25,
         borderRadius: ['0', '25px'],
     });
 }
