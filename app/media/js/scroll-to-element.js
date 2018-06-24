@@ -14,6 +14,7 @@ function scrollToElement (element) {
         targets: scrollElement,
         scrollTop: scrollValue,
         easing: 'easeOutExpo',
+        duration: 500,
     });
 }
 
