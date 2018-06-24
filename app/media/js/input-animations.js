@@ -30,14 +30,10 @@ function inputAnimation (event) {
         scale: 1.05,
         duration: 700,
         borderRadius: 25,
-        begin: function () {
-            console.log('supppppppppp:start')
-        },
     });
 }
 
 function resetButtonAnimation (event) {
-    console.log('blurrrrrrrrrrrr', inAnimation)
     const { target } = event;
     const animationId = target.getAttribute(ANIMATION_ID_KEY);
     const inAnimation = inAnimationMap[animationId];
@@ -49,11 +45,7 @@ function resetButtonAnimation (event) {
         scale: 1,
         duration: 700,
         borderRadius: 0,
-        begin: function () {
-            console.log('supppppppppp:reset')
-        },
     });
-    console.log(outAnimation)
 }
 
 module.exports = inputAnimations;
