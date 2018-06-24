@@ -13,7 +13,7 @@ function scrollToElement (element) {
     anime({
         targets: scrollElement,
         scrollTop: scrollValue,
-        easing: 'easeInOutBack',
+        easing: 'easeOutExpo',
     });
 }
 
