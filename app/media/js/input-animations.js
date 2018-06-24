@@ -2,27 +2,23 @@ import anime from 'animejs';
 
 const ANIMATION_ID_KEY = 'data-animation-id';
 
-// sets up mouse enter/leave, focus/blur and touch handlers for button animations
-function buttonAnimations () {
-    const buttons = document.querySelectorAll('button,a');
-    for (let i = 0; i < buttons.length; i++) {
-        const button = buttons[i];
-        button.setAttribute(ANIMATION_ID_KEY, `${i}-button`);
+// sets up focus enter/leave handlers for input animations
+function inputAnimations () {
+    const inputs = document.querySelectorAll('input,textarea');
+    for (let i = 0; i < inputs.length; i++) {
+        const input = inputs[i];
+        input.setAttribute(ANIMATION_ID_KEY, `${i}-input`);
         // transform
-        button.addEventListener('touchstart', buttonAnimation, false);
-        button.addEventListener('mouseenter', buttonAnimation, false);
-        button.addEventListener('focus', buttonAnimation, false);
+        input.addEventListener('focus', inputAnimation, false);
         // reset
-        button.addEventListener('mouseleave', resetButtonAnimation, false);
-        button.addEventListener('touchend', resetButtonAnimation, false);
-        button.addEventListener('blur', resetButtonAnimation, false);
+        input.addEventListener('blur', resetButtonAnimation, false);
     }
 }
 
 let outAnimationMap = {};
 let inAnimationMap = {};
 
-function buttonAnimation (event) {
+function inputAnimation (event) {
     const { target } = event;
     const animationId = target.getAttribute(ANIMATION_ID_KEY);
     const outAnimation = outAnimationMap[animationId];
@@ -31,13 +27,17 @@ function buttonAnimation (event) {
 
     inAnimationMap[animationId] = anime({
         targets: target,
-        scale: 1.15,
+        scale: 1.05,
         duration: 700,
         borderRadius: 25,
+        begin: function () {
+            console.log('supppppppppp:start')
+        },
     });
 }
 
 function resetButtonAnimation (event) {
+    console.log('blurrrrrrrrrrrr', inAnimation)
     const { target } = event;
     const animationId = target.getAttribute(ANIMATION_ID_KEY);
     const inAnimation = inAnimationMap[animationId];
@@ -49,7 +49,11 @@ function resetButtonAnimation (event) {
         scale: 1,
         duration: 700,
         borderRadius: 0,
+        begin: function () {
+            console.log('supppppppppp:reset')
+        },
     });
+    console.log(outAnimation)
 }
 
-module.exports = buttonAnimations;
+module.exports = inputAnimations;
