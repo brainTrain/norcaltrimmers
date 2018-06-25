@@ -7,7 +7,7 @@ function flowerAnimations () {
 
     anime({
         targets: plantSvg,
-        duration: 20000,
+        duration: 15000,
         easing: 'easeInOutBack',
         loop: true,
         fill: [
