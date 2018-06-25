@@ -11,7 +11,6 @@ function flowerAnimations () {
         easing: 'easeInOutBack',
         loop: true,
         fill: [
-          '#87AB7B',
           '#4F6242',
           '#9B6679',
           '#87AB7B'
