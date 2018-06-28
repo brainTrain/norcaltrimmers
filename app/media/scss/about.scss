@@ -11,27 +11,25 @@
 
 .about-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     p {
         font-size: 20px;
         line-height: 25px;
         text-align: center;
+        flex: 1;
+        flex-basis: 50%;
+        margin-bottom: auto;
 
-        @include breakpoint($breakpoint-desktop) {
+        @include breakpoint($breakpoint-tablet) {
             text-align: initial;
         }
+    }
 
-        &:first-of-type {
-            border-bottom: 2px dotted $white;
-
-            @include breakpoint($breakpoint-desktop) {
-                margin-right: 16px;
-                border-right: 2px dotted $white;
-                border-bottom: none;
-            }
-        }
+    @include breakpoint($breakpoint-tablet) {
+        justify-content: space-between;
+        flex-direction: row;
     }
 }
 
@@ -60,15 +58,19 @@
 }
 
 .about-tile {
-    max-width: 500px;
-    min-height: 100px;
-    margin-right: 5px;
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-bottom: 36px;
-
     @include breakpoint($breakpoint-desktop) {
-        padding: 10px;
-        margin-bottom: 0;
+    }
+}
+
+.about-divider {
+    margin: 25px 0;
+    border-top: 2px dotted $white;
+    max-width: 200px;
+    width: 100%;
+
+    @include breakpoint($breakpoint-tablet) {
+        height: 100%;
+        max-height: 200px;
+        transform: rotate(90deg);
     }
 }
