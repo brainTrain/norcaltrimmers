@@ -63,13 +63,13 @@
 }
 
 .about-divider {
-    margin: 25px 0;
+    margin: 40px 0;
     border-top: 2px dotted $white;
     max-width: 200px;
     width: 100%;
 
     @include breakpoint($breakpoint-tablet) {
-        margin: 0 25px;
+        margin: 0 40px;
         height: 160px;
         width: 1px;
         border-right: 2px dotted $white;
