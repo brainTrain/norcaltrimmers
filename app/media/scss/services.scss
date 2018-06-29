@@ -50,16 +50,14 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-right: auto; 
+        align-self: flex-start;
     }
 
     &:nth-child(even) {
 
         @include breakpoint($breakpoint-mobile) {
             flex-direction: row-reverse;
-            // reset margin
-            margin: 0;
-            margin-left: auto; 
+            align-self: flex-end;
         }
     }
 
@@ -98,8 +96,9 @@
 .service-divider {
     border-bottom: 2px dotted;
     border-right: none;
-    width: 70px;
-    margin: 15px 0;
+    max-width: 140px;
+    width: 100%;
+    margin: 25px 0;
 
     @include breakpoint($breakpoint-mobile) {
         width: 0;
