@@ -35,7 +35,7 @@
 .contact-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -75,7 +75,6 @@
     height: 50px;
     border: 2px solid $white;
     text-transform: uppercase;
-    //background-color: transparent;
     background-color: $accent-color-3;
     color: $white;
 }
