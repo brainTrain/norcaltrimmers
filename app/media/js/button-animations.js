@@ -3,8 +3,8 @@ import anime from 'animejs';
 const ANIMATION_ID_KEY = 'data-animation-id';
 
 // sets up mouse enter/leave, focus/blur and touch handlers for button animations
-function buttonAnimations () {
-    const buttons = document.querySelectorAll('button,footer a');
+function buttonAnimations (selector) {
+    const buttons = document.querySelectorAll(selector);
     for (let i = 0; i < buttons.length; i++) {
         const button = buttons[i];
         button.setAttribute(ANIMATION_ID_KEY, `${i}-button`);

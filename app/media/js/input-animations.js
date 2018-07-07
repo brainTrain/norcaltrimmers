@@ -3,8 +3,8 @@ import anime from 'animejs';
 const ANIMATION_ID_KEY = 'data-animation-id';
 
 // sets up focus enter/leave handlers for input animations
-function inputAnimations () {
-    const inputs = document.querySelectorAll('input,textarea');
+function inputAnimations (selector) {
+    const inputs = document.querySelectorAll(selector);
     for (let i = 0; i < inputs.length; i++) {
         const input = inputs[i];
         input.setAttribute(ANIMATION_ID_KEY, `${i}-input`);

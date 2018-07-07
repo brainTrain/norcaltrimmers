@@ -6,6 +6,6 @@ import safariRequiredShim from './safari-required-shim';
 
 safariRequiredShim();
 scrollHandler('[js-click=header-nav-item]');
-buttonAnimations();
-inputAnimations();
+buttonAnimations('[js-animation=wobbly-button]');
+inputAnimations('[js-animation=wobbly-form-element]');
 flowerAnimations();
