@@ -18,6 +18,10 @@ NorCal Trimmers is a San Francisco based company that specializes in efficient a
 We are an established company providing our services to many groups and dispensaries including GrassRoots and Barbary Coast. We take pride in being the fastest, clearnest and most trustworthy trimming company in California.
 
 ## services
+
+### Packaging
+* We provide CA compliant packaging for flowers, concentrates, pre-rolls or any of our client needs.
+
 ### Quote on site
 * We provide a timetable and quote on site upon analysis of the product.
 
