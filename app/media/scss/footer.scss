@@ -9,7 +9,7 @@ footer {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
-        height: 100%;
+        height: auto;
         max-width: 400px;
         margin: 0 auto;
     }
@@ -22,5 +22,9 @@ footer {
             height: 50px;
             width: 50px;
         }
+    }
+
+    .footer-mail-link {
+        padding-top: 10px;
     }
 }
