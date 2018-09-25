@@ -43,11 +43,6 @@
     border-radius: 170px;
     max-height: 320px;
     max-width: 320px;
-    display: none;
-
-    @include breakpoint($breakpoint-tablet) {
-        display: initial;
-    }
 }
 
 .contact-form {
@@ -96,4 +91,19 @@
 
 .contact-message {
     height: 150px;
+}
+
+.contact-right-container {
+    display: none;
+
+    @include breakpoint($breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+        display: initial;
+    }
+}
+
+.contact-mail-link {
+    color: $white;
+    display: none;
 }
