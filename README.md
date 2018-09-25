@@ -1,3 +1,11 @@
+# Install
+* `npm install`
+* `npm install --global gulp`
+# Build
+* `gulp build`
+# Run for local development
+* `gulp local`
+
 # NorCal Trimmers
 _Professional. Efficient. Fast!_
 
