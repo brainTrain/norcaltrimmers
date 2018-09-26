@@ -1,9 +1,9 @@
 footer {
     position: relative;
-    height: $footer-height;
+    height: auto;
     background-color: $secondary-color;
     border-top: 4px solid $accent-color-1;
-    padding: 5px 0;
+    padding: 15px 0;
 
     nav {
         display: flex;
@@ -26,6 +26,11 @@ footer {
     }
 
     .footer-mail-link {
+        padding-top: 10px;
+    }
+
+    .footer-phone-text {
+        color: $white;
         padding-top: 10px;
     }
 }
