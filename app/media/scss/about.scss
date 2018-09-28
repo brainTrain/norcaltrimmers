@@ -14,22 +14,7 @@
     flex-direction: column;
     align-items: center;
 
-    p {
-        font-size: 20px;
-        line-height: 25px;
-        text-align: center;
-        flex: 1;
-        flex-basis: 50%;
-        margin-bottom: auto;
-
-        @include breakpoint($breakpoint-tablet) {
-            text-align: initial;
-        }
-    }
-
     @include breakpoint($breakpoint-tablet) {
-        justify-content: space-between;
-        flex-direction: row;
     }
 }
 
@@ -58,8 +43,22 @@
 }
 
 .about-tile {
-    @include breakpoint($breakpoint-desktop) {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    flex: 1;
+    flex-basis: 50%;
+    margin-bottom: auto;
+
+    @include breakpoint($breakpoint-tablet) {
+        text-align: initial;
     }
+}
+
+.about-footer {
+    font-size: 25px;
+    font-weight: bold;
+    word-spacing: 20px;
 }
 
 .about-divider {
@@ -69,10 +68,5 @@
     width: 100%;
 
     @include breakpoint($breakpoint-tablet) {
-        margin: 0 40px;
-        height: 160px;
-        width: 1px;
-        border-right: 2px dotted $white;
-        border-top: none;
     }
 }
